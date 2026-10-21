@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.22.1)
+project(pitchshift)
+add_library(pitchshift SHARED pitchshift.cpp)
+find_library(log-lib log)
+target_link_libraries(pitchshift ${log-lib})
